@@ -11,3 +11,74 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container-info{
+  height: 100vh;
+}
+.container-img::before{
+  background: linear-gradient(rgba(255, 255, 255, 0),rgb(1, 1, 31));
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.container-img{
+  display: block;
+  position: absolute;
+  inset: 0px;
+}
+
+.container-img img{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  object-fit: cover;
+}
+
+.section-info{
+  color: white;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info{
+  text-align: left;
+}
+.info p{
+  margin-top: 30px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  color: rgb(133, 133, 133);
+  width: 90%;
+  line-height: 30px;
+}
+.info button{
+  width: 40%;
+}
+.info button a{
+  color: white;
+}
+
+.info h1{
+  background: #ccc;
+  background: linear-gradient(90deg, rgb(0, 89, 255), rgb(224, 64, 0));
+  font-family: Calisto MT, Bookman Old Style, Bookman, Goudy Old Style, Garamond, Hoefler Text, Bitstream Charter, Georgia, serif;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.img-me{
+  height: 300px;
+  border-radius: 150px;
+}
