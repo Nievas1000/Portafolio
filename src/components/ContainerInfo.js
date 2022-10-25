@@ -12,7 +12,7 @@ const ContainerInfo = () =>{
                     <div className='info'>
                         <h1>Bienvenido a mi portafolio</h1>
                         <p>Te saluda Lautaro Nievas, soy un Desarrollador Web y te doy la bienvenida a mi portafolio. Me considero una persona proactiva y con muchas ganas de aprender.</p>
-                        <Button className="mt-3" variant="primary"><a href="https://kinggames.vercel.app/">Contactame</a></Button>
+                        <Button className="mt-3" variant="primary"><a href="#contact">Contactame</a></Button>
                     </div>
                 </Col>
                 <Col md="auto"></Col>

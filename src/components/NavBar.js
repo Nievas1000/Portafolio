@@ -45,9 +45,9 @@ const NavBar = () =>{
                 </Nav>
                 <span className="navbar-text">
                 <div className="social-icon">
-                    <a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
-                    <a href="#"><i className="fa fa-github" aria-hidden="true"></i></a>
-                    <a href="#"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/in/lautaro-nievas/" target="_blank"><i className="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/Nievas1000" target="_blank"><i className="fa fa-github" aria-hidden="true"></i></a>
+                    <a href="#contact"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                 </div>
                 </span>
             </Navbar.Collapse>
