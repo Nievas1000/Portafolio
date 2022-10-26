@@ -23,7 +23,7 @@ const Contacto = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://floating-sea-59391.herokuapp.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -32,8 +32,9 @@ const Contacto = () => {
     });
     setButtonText("Send");
     let result = await response.json();
+    console.log(result)
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
