@@ -21,6 +21,9 @@ const Contacto = () => {
   }
 
   const handleSubmit = async (e) => {
+    if(formDetails.message === '' || formDetails.email === '' || formDetails.firstName === '' || formDetails.lastName === ''){
+      return setStatus({ succes: true, message: 'You must complete the fields'});
+    }
     e.preventDefault();
     setButtonText("Sending...");
     let response = await fetch("https://floating-sea-59391.herokuapp.com/contact", {
@@ -60,7 +63,7 @@ const Contacto = () => {
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
                       <Col sm={1} className="d-flex send">
                         <button type="submit"><span>{buttonText}</span></button>
-                        <img src={img_contact}/>
+                        <img className="img-contact" src={img_contact}/>
                       </Col>
                     </Col>
                     {

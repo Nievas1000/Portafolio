@@ -29,7 +29,7 @@ const NavBar = () =>{
     return(
         <Navbar expand="md" className={scroll ? "scrolled" : ""}>
             <Container>
-            <Navbar.Brand className="d-flex" href="/">
+            <Navbar.Brand className="d-flex img-logo" href="/">
                 <img src={L} />
                 <img src={N} />
             </Navbar.Brand>

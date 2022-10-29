@@ -8,9 +8,9 @@ const Proyectos = () =>{
     return(
         <div id="projects">
             <h1>Proyectos</h1>
-            <Row>
-                <Col><img className="rounded" src={proj1}/></Col>
-                <Col className="project1-info">
+            <Row className="individual-project">
+                <Col className="img-project"><img className="rounded" src={proj1}/></Col>
+                <Col className="project1-info project-info">
                     <h4>KingGames - Ecommerce</h4>
                     <h6>NextJs - Firebase</h6>
                     <div className="links-projects">
@@ -18,19 +18,19 @@ const Proyectos = () =>{
                     </div>
                 </Col>
             </Row>
-            <Row>
-                <Col>
+            <Row className="individual-project">
+                <Col className="project-info">
                     <h4>BlogKing - Blog</h4>
                     <h6>NextJs - NodeJs - Express</h6>
                     <div className="links-projects">
                         <Button variant="primary"><a href="https://github.com/Nievas1000/PhotographyBlog" target="_blank">Ir al repositorio <i className="fa fa-github" aria-hidden="true"></i></a></Button>
                     </div>
                 </Col>
-                <Col><img className="rounded" src={proj2}/></Col>
+                <Col className="img-project"><img className="rounded" src={proj2}/></Col>
             </Row>
-            <Row>
-                <Col><img className="rounded" src={proj3}/></Col>
-                <Col className="project1-info">
+            <Row className="individual-project">
+                <Col className="img-project"><img className="rounded" src={proj3}/></Col>
+                <Col className="project1-info project-info">
                     <h4>API - University API</h4>
                     <h6>Java - Springboot</h6>
                     <div className="links-projects">

@@ -82,7 +82,6 @@ nav.navbar a.navbar-brand {
 }
 nav.navbar a.navbar-brand * {
   margin: -7px;
-  width: 40%;
   filter: brightness(80%);
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -100,6 +99,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
 span.navbar-text {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .social-icon {
     display: inline-block;
@@ -216,6 +216,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+
+.img-logo{
+  width: 210px;
+}
+
+.img-logo img{
+  width: 210px;
+  height: 30px;
 }
 
 /************ Sobre mi ************/
@@ -350,4 +359,60 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .form-contact button:hover::before {
   width: 100%;
 }
+@media only screen and (max-width: 600px) {
+  .info{
+    margin-top: 50%;
+    text-align: center;
+  }
+  .info p{
+    color: white;
+    margin-left: 8%;
+  }
+  .info img{
+    display: block;
+    height: 180px;
+    margin-bottom: 20px;
+  }
+  .info button{
+    width: 100%;
+    margin-left: 3%;
+  }
+  h1{
+    font-size: 2rem !important;
+  }
+  .img-me{
+    display: none;
+  }
+  p{
+    font-size: 18px !important;
+  }
+  .container-full-about-me{
+    display: block;
+    width: 90% !important;
+  } 
+  /************ Tecnologies ************/
+  .tecnologies .list-group-item .card{
+    width: 3rem !important;
+  }
 
+  .img-project{
+    grid-area: img-project;
+  }
+
+  .project-info{
+    margin-top: -10% !important;
+    grid-area: project-info;
+  }
+  /************ Projects ************/
+  .individual-project{
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img-project"
+    "project-info";
+  }
+  /************ Contact ************/
+  .img-contact{
+    display: none;
+  }
+}
