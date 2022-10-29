@@ -224,7 +224,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .img-logo img{
   width: 210px;
-  height: 30px;
+  height: 40px;
 }
 
 /************ Sobre mi ************/
@@ -360,6 +360,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 @media only screen and (max-width: 600px) {
+  .img-logo img{
+    height: 25px;
+  }
   .info{
     margin-top: 50%;
     text-align: center;
