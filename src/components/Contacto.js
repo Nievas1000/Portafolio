@@ -60,7 +60,7 @@ const Contacto = () => {
 
   return (
     <div id="contact">
-      <h1>Contacto</h1>
+      <h1>Contact</h1>
       <Container className="d-flex">
         <form onSubmit={handleSubmit}>
           <Row className="form-contact">
