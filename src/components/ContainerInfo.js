@@ -11,7 +11,7 @@ const ContainerInfo = () => {
       <Row className="justify-content-md-center section-info">
         <Col xs lg="3">
           <div className="info">
-            <h1>welcome to my portfolio</h1>
+            <h1>Welcome to my portfolio</h1>
             <p>
               Lautaro Nievas greets you, I am a Full-Stack Developer and I
               welcome you to my portfolio. I consider myself a proactive person
