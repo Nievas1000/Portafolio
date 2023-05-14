@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import img_contact from "../assets/img-contact.png";
+import { useScrollEffect } from "../hooks/useScrollEfect";
 
 const Contacto = () => {
   const formInitialDetails = {
@@ -12,6 +12,7 @@ const Contacto = () => {
   const [formDetails, setFormDetails] = useState(formInitialDetails);
   const [buttonText, setButtonText] = useState("Send");
   const [status, setStatus] = useState({});
+  const [visible] = useScrollEffect("scrollEffectContact");
 
   const onFormUpdate = (category, value) => {
     setFormDetails({
@@ -59,7 +60,7 @@ const Contacto = () => {
   };
 
   return (
-    <div id="contact">
+    <div className={`scrollEffectContact ${visible && "visible"}`} id="contact">
       <h1>Contact</h1>
       <Container className="d-flex">
         <form onSubmit={handleSubmit}>
@@ -99,7 +100,6 @@ const Contacto = () => {
                 <button type="submit">
                   <span>{buttonText}</span>
                 </button>
-                <img className="img-contact" src={img_contact} />
               </Col>
             </Col>
             {status.message && (

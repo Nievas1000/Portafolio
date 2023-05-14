@@ -227,15 +227,18 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   height: 40px;
 }
 
-/************ Sobre mi ************/
+/************ About me ************/
 
-
+.upper-me{
+  justify-content: center;
+    display: flex;
+}
 
 .full-about-me{
   display: flex;
   justify-content: center;
   text-align: left;
-  background: radial-gradient(circle 1000px at 20% 90% ,rgb(49, 31, 73),rgb(10, 10, 37),rgb(1, 1, 31));
+  background: radial-gradient(circle 1000px at 20% 40% ,rgb(49, 31, 73),rgb(10, 10, 37),rgb(1, 1, 31));
 }
 
 .full-about-me h1{
@@ -283,16 +286,32 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: white;
 }
 /************ Projects ************/
-#projects *{
-  margin-top: 20px;
-}
+
 .links-projects button{
-  width: 60%;
+  height: 40px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .links-projects button a{
   color: white;
+  margin-top: 25px;
 }
 
+.icons-proyect{
+  margin-bottom: 20px;
+}
+
+.icons-proyect *{
+  margin: 10px;
+}
+
+.icons-proyect img{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
 
 /************ Contact ************/
 .form-contact input, .form-contact textarea{
@@ -359,9 +378,56 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .form-contact button:hover::before {
   width: 100%;
 }
+
+/************ Resume ************/
+
+.annotationLayer{
+  height: 0px !important;
+}
+
+.button-resume{
+  width: 595px;
+  margin-bottom: -5px;
+  background-color: rgb(88, 51, 136) !important;
+  border: none;
+}
+
+
+.button-resume:hover{
+  background-color: rgb(74, 30, 131) !important;
+}
+@media only screen and (max-width: 1000px){
+  .project-info{
+    margin-top: -5% !important;
+    grid-area: project-info;
+    display: flex;
+    justify-content: center;
+  }
+  .project-info h4,.links-projects{
+    display: flex;
+    justify-content: center;
+  }
+  .img-project{
+    grid-area: img-project;
+  }
+  .individual-project{
+    display: grid !important;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "img-project"
+    "project-info";
+  }
+  .links-projects button{
+    width: 250px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .img-logo img{
     height: 25px;
+  }
+  .upper-info{
+    margin-left: 20px;
+    margin-top: 20%;
   }
   .info{
     margin-top: 50%;
@@ -369,7 +435,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   }
   .info p{
     color: white;
-    margin-left: 8%;
   }
   .info img{
     display: block;
@@ -398,22 +463,12 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     width: 3rem !important;
   }
 
-  .img-project{
-    grid-area: img-project;
+  .container-resume{
+    display: none;
   }
 
-  .project-info{
-    margin-top: -10% !important;
-    grid-area: project-info;
-  }
   /************ Projects ************/
-  .individual-project{
-    display: grid !important;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "img-project"
-    "project-info";
-  }
+
   /************ Contact ************/
   .img-contact{
     display: none;

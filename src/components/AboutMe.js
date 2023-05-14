@@ -1,6 +1,13 @@
+import { useScrollEffect } from "../hooks/useScrollEfect";
+
 const SobreMi = () => {
+  const [visible] = useScrollEffect("scrollEffectAbout");
+
   return (
-    <div className="container-sobreMi" id="aboutMe">
+    <div
+      className={`container-sobreMi scrollEffectAbout ${visible && "visible"}`}
+      id="aboutMe"
+    >
       <h1>About me</h1>
       <p>
         My name is Lautaro Nievas and I am a Web Developer with almost 2 years

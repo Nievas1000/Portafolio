@@ -6,13 +6,16 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+.App{
+  overflow-x: hidden;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 .container-info{
   height: 100vh;
+  background: linear-gradient(to bottom, rgba(1,1,31,0.9) 0%, rgba(1,1,31,1) 100%);
 }
 .container-img::before{
   background: linear-gradient(rgba(255, 255, 255, 0),rgb(1, 1, 31));
@@ -57,15 +60,21 @@ code {
   margin-top: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 20px;
-  color: rgb(133, 133, 133);
-  width: 90%;
-  line-height: 30px;
+  color: #CCCCCC;
+  width: 100%;
+  text-align: center;
 }
 .info button{
-  width: 40%;
+  width: 50%;
+  background-color: rgb(88, 51, 136);
+  border: none;
+}
+.info button:hover{
+  background-color: rgb(51, 29, 78);
 }
 .info button a{
   color: white;
+  width: 100%;
 }
 
 .info h1{
@@ -76,9 +85,54 @@ code {
   font-weight: bold;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  text-align: center ;
 }
 
 .img-me{
   height: 300px;
+  width: 400px;
   border-radius: 40px;
+  animation: move 2s infinite alternate;
 }
+
+@keyframes move {
+  from { transform: translateX(0); }
+  to { transform: translateY(50px); }
+}
+
+.scrollEffectAbout {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+
+.scrollEffectProyects {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollEffectTec {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.scrollEffectContact {
+  opacity: 0;
+  transform: translateX(-50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.scrollEffectResume {
+  opacity: 0;
+  transform: translateX(50%);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
