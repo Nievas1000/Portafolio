@@ -1,5 +1,5 @@
 import { Button } from "react-bootstrap";
-import { Document, Page } from "react-pdf/dist/esm/entry.vite";
+import { Document, Page } from "react-pdf/dist/esm/entry.parcel2";
 import myResume from "../resume/CV.pdf";
 import { useState } from "react";
 import { useScrollEffect } from "../hooks/useScrollEfect";
