@@ -1,9 +1,8 @@
 import { Button } from "react-bootstrap";
-import { Document, Page } from "react-pdf";
+import { Document, Page } from "react-pdf/dist/esm/entry.vite";
 import myResume from "../resume/CV.pdf";
 import { useState } from "react";
 import { useScrollEffect } from "../hooks/useScrollEfect";
-import "react-pdf/dist/esm/entry.webpack5";
 
 export const Resume = () => {
   const [numPages, setNumPages] = useState(1);
