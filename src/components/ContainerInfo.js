@@ -2,6 +2,7 @@ import { Button, Col, Row } from "react-bootstrap";
 import img from "../assets/porta1.jpg";
 import img3 from "../assets/pre-porta1.png";
 import { useEffect, useState } from "react";
+import Background3D from "./Background3D";
 const ContainerInfo = () => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -49,7 +50,7 @@ const ContainerInfo = () => {
   };
   return (
     <div className="container-info" id="home">
-      <Row className="justify-content-md-center section-info">
+      <Row className="justify-content-md-center section-info position-relative">
         <Col xs lg="4" className="upper-info">
           <div className="info">
             <h1>
@@ -77,9 +78,10 @@ const ContainerInfo = () => {
           </div>
         </Col>
         <Col md="2"></Col>
-        <Col xs lg="4">
-          <img className="img-me" src={img3} alt="img" />
-        </Col>
+        <Col xs lg="4"></Col>
+        <div className="objet3D">
+          <Background3D />
+        </div>
       </Row>
     </div>
   );

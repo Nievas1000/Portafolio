@@ -50,20 +50,30 @@ const Proyectos = () => {
       <Row className="individual-project d-flex mb-5">
         <Col className="project-info">
           <div>
-            <h4>BlogKing</h4>
+            <h4>Coaching - LandingPage</h4>
             <div className="d-flex icons-proyect">
-              <img src={next} alt="AWS" />
-              <img src={node} alt="NodeJS" />
-              <h6 className="d-flex align-items-center mt-2">ExpressJs</h6>
+              <img src={react} alt="React" />
+              <img src={bootstrap} alt="Bootstrap" />
+              <img src={css} alt="CSS" />
+              <img src={html} alt="HTML" />
             </div>
-            <div className="links-projects">
+            <div className="links-projects d-block d-md-flex gap-3">
               <Button variant="primary">
                 <a
-                  href="https://github.com/Nievas1000/PhotographyBlog"
+                  href="https://github.com/Nievas1000/COACHING-PAGE"
                   target="_blank"
                   rel="noreferrer"
                 >
                   More Info <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </Button>
+              <Button variant="primary">
+                <a
+                  href="https://james-clear.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit <i className="fa-regular fa-eye"></i>
                 </a>
               </Button>
             </div>
@@ -79,20 +89,32 @@ const Proyectos = () => {
         </Col>
         <Col className="project1-info project-info">
           <div>
-            <h4>API - MonolithHelper API</h4>
+            <h4>KIRA - Task Organizer</h4>
             <div className="d-flex icons-proyect">
-              <img src={aws} alt="AWS" />
               <img src={node} alt="NodeJS" />
+              <img src={react} alt="React" />
+              <img src={bootstrap} alt="Bootstrap" />
+              <img src={css} alt="CSS" />
+              <img src={html} alt="HTML" />
               <h6 className="d-flex align-items-center mt-2">ExpressJs</h6>
             </div>
-            <div className="links-projects">
+            <div className="links-projects d-block d-md-flex gap-3">
               <Button variant="primary">
                 <a
-                  href="https://github.com/Nievas1000/Express-Lambda-Api"
+                  href="https://github.com/Nievas1000/Project-Organizer"
                   target="_blank"
                   rel="noreferrer"
                 >
                   More Info <i className="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </Button>
+              <Button variant="primary">
+                <a
+                  href="https://kira-organizer.netlify.app/home"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Visit <i className="fa-regular fa-eye"></i>
                 </a>
               </Button>
             </div>

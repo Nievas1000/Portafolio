@@ -229,6 +229,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 /************ About me ************/
 
+.objet3D{
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
 .upper-me{
   justify-content: center;
     display: flex;
