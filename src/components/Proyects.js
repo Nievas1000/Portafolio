@@ -96,7 +96,6 @@ const Proyectos = () => {
               <img src={bootstrap} alt="Bootstrap" />
               <img src={css} alt="CSS" />
               <img src={html} alt="HTML" />
-              <h6 className="d-flex align-items-center mt-2">ExpressJs</h6>
             </div>
             <div className="links-projects d-block d-md-flex gap-3">
               <Button variant="primary">
