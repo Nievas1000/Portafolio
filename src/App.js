@@ -6,6 +6,7 @@ import Tecnologias from "./components/Technologies";
 import Proyectos from "./components/Proyects";
 import Contacto from "./components/Contact";
 import { Resume } from "./components/Resume";
+import { PopupWidget } from "react-calendly";
 
 function App() {
   return (
@@ -21,6 +22,13 @@ function App() {
           <Contacto />
         </div>
       </div>
+      <PopupWidget
+        url="https://calendly.com/nievas"
+        rootElement={document.getElementById("root")}
+        text="Let's schedule a call!"
+        textColor="#ffffff"
+        color="#0808D8"
+      />
     </div>
   );
 }
