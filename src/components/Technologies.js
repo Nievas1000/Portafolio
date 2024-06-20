@@ -1,13 +1,11 @@
 import { Card, ListGroup } from "react-bootstrap";
 import react from "../assets/react.png";
-import java from "../assets/java.png";
 import js from "../assets/js.png";
 import angular from "../assets/angular.png";
 import git from "../assets/git.png";
 import html from "../assets/html.png";
 import css from "../assets/css.png";
 import bootstrap from "../assets/bootstrap.png";
-import php from "../assets/php.png";
 import aws from "../assets/aws.png";
 import node from "../assets/nodejs.png";
 import { useScrollEffect } from "../hooks/useScrollEfect";
@@ -46,14 +44,6 @@ const Tecnologias = () => {
           </ListGroup.Item>
           <ListGroup.Item className="col">
             <Card style={{ width: "6rem" }}>
-              <Card.Img variant="top" src={java} />
-              <Card.Body>
-                <Card.Title>Java</Card.Title>
-              </Card.Body>
-            </Card>
-          </ListGroup.Item>
-          <ListGroup.Item className="col">
-            <Card style={{ width: "6rem" }}>
               <Card.Img variant="top" src={js} />
               <Card.Body>
                 <Card.Title>Javascript</Card.Title>
@@ -65,14 +55,6 @@ const Tecnologias = () => {
               <Card.Img variant="top" src={angular} />
               <Card.Body>
                 <Card.Title>Angular</Card.Title>
-              </Card.Body>
-            </Card>
-          </ListGroup.Item>
-          <ListGroup.Item className="col">
-            <Card style={{ width: "6rem" }}>
-              <Card.Img variant="top" src={php} />
-              <Card.Body>
-                <Card.Title>PHP</Card.Title>
               </Card.Body>
             </Card>
           </ListGroup.Item>
