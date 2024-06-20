@@ -9,7 +9,6 @@ import bootstrap from "../assets/bootstrap.png";
 import css from "../assets/css.png";
 import html from "../assets/html.png";
 import node from "../assets/nodejs.png";
-import next from "../assets/next-js.svg";
 
 const Proyectos = () => {
   const [visible] = useScrollEffect("scrollEffectProyects");
@@ -39,6 +38,7 @@ const Proyectos = () => {
                   href="https://github.com/Nievas1000/MonolithHelper"
                   target="_blank"
                   rel="noreferrer"
+                  className="pt-1"
                 >
                   More Info <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
@@ -50,28 +50,31 @@ const Proyectos = () => {
       <Row className="individual-project d-flex mb-5">
         <Col className="project-info">
           <div>
-            <h4>Coaching - LandingPage</h4>
+            <h4>Nevve - Digital Agency</h4>
             <div className="d-flex icons-proyect">
               <img src={react} alt="React" />
               <img src={bootstrap} alt="Bootstrap" />
               <img src={css} alt="CSS" />
               <img src={html} alt="HTML" />
+              <img src={node} alt="NodeJS" />
             </div>
             <div className="links-projects d-block d-md-flex gap-3">
               <Button variant="primary">
                 <a
-                  href="https://github.com/Nievas1000/COACHING-PAGE"
+                  href="https://github.com/Nievas1000/web-design-agency"
                   target="_blank"
                   rel="noreferrer"
+                  className="pt-1"
                 >
                   More Info <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
               </Button>
               <Button variant="primary">
                 <a
-                  href="https://james-clear.netlify.app/"
+                  href="https://nevvedesign.com/"
                   target="_blank"
                   rel="noreferrer"
+                  className="pt-1"
                 >
                   Visit <i className="fa-regular fa-eye"></i>
                 </a>
@@ -103,6 +106,7 @@ const Proyectos = () => {
                   href="https://github.com/Nievas1000/Project-Organizer"
                   target="_blank"
                   rel="noreferrer"
+                  className="pt-1"
                 >
                   More Info <i className="fa fa-github" aria-hidden="true"></i>
                 </a>
@@ -112,6 +116,7 @@ const Proyectos = () => {
                   href="https://kira-organizer.netlify.app/home"
                   target="_blank"
                   rel="noreferrer"
+                  className="pt-1"
                 >
                   Visit <i className="fa-regular fa-eye"></i>
                 </a>
