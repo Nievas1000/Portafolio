@@ -10,7 +10,7 @@ const SobreMi = () => {
     >
       <h1>About me</h1>
       <p>
-        Experienced and results-driven Software Engineer boasting nearly three
+        Experienced and results-driven Software Engineer boasting more than three
         years of hands-on expertise in both front-end and back-end development.
         I am recognized for my unwavering dedication to producing top-notch
         code, and my optimistic demeanor shines through in the collaborative
